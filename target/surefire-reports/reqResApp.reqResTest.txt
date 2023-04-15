@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: reqResApp.reqResTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.243 s <<< FAILURE! - in reqResApp.reqResTest
+testParallel  Time elapsed: 10.197 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 1283, url: https://reqres.in/api/register, response: 
+{"error":"Missing email or username"}
+classpath:reqResApp/feature/createUser.feature:22 ==> expected: <0> but was: <1>
+	at reqResApp.reqResTest.testParallel(reqResTest.java:15)
+

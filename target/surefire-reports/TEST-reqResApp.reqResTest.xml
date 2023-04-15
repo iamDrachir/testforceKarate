@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="reqResApp.reqResTest" time="10.243" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="20"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Public\Documents\iKarate\target\test-classes;C:\Users\Public\Documents\iKarate\target\classes;C:\Users\vboxuser\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\vboxuser\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\vboxuser\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\vboxuser\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\vboxuser\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\vboxuser\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\vboxuser\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\vboxuser\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\vboxuser\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\vboxuser\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.2\jackson-datatype-jsr310-2.14.2.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\vboxuser\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\vboxuser\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\vboxuser\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\vboxuser\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\vboxuser\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\vboxuser\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\vboxuser\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\vboxuser\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\vboxuser\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\vboxuser\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\vboxuser\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\vboxuser\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\vboxuser\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\vboxuser\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\vboxuser\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\vboxuser\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\vboxuser\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\vboxuser\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\vboxuser\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\vboxuser\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\vboxuser\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\vboxuser\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vboxuser\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\vboxuser\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vboxuser\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\vboxuser\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="20"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="sun.java.command" value="C:\Users\vboxuser\AppData\Local\Temp\surefire14746937017982455696\surefirebooter10935915498607598344.jar C:\Users\vboxuser\AppData\Local\Temp\surefire14746937017982455696 2023-04-15T11-03-42_041-jvmRun1 surefire15668289799150794716tmp surefire_0322949161672401253tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Public\Documents\iKarate\target\test-classes;C:\Users\Public\Documents\iKarate\target\classes;C:\Users\vboxuser\.m2\repository\com\intuit\karate\karate-junit5\1.4.0\karate-junit5-1.4.0.jar;C:\Users\vboxuser\.m2\repository\com\intuit\karate\karate-core\1.4.0\karate-core-1.4.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\js\js-scriptengine\22.3.0\js-scriptengine-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.0\graal-sdk-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\js\js\22.3.0\js-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\regex\regex\22.3.0\regex-22.3.0.jar;C:\Users\vboxuser\.m2\repository\org\graalvm\truffle\truffle-api\22.3.0\truffle-api-22.3.0.jar;C:\Users\vboxuser\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\vboxuser\.m2\repository\org\thymeleaf\thymeleaf\3.0.14.RELEASE\thymeleaf-3.0.14.RELEASE.jar;C:\Users\vboxuser\.m2\repository\ognl\ognl\3.1.26\ognl-3.1.26.jar;C:\Users\vboxuser\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\vboxuser\.m2\repository\org\attoparser\attoparser\2.0.5.RELEASE\attoparser-2.0.5.RELEASE.jar;C:\Users\vboxuser\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\vboxuser\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\vboxuser\.m2\repository\com\linecorp\armeria\armeria\1.22.0\armeria-1.22.0.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.14.2\jackson-datatype-jdk8-2.14.2.jar;C:\Users\vboxuser\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.14.2\jackson-datatype-jsr310-2.14.2.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-core\1.10.3\micrometer-core-1.10.3.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-commons\1.10.3\micrometer-commons-1.10.3.jar;C:\Users\vboxuser\.m2\repository\io\micrometer\micrometer-observation\1.10.3\micrometer-observation-1.10.3.jar;C:\Users\vboxuser\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\vboxuser\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport\4.1.87.Final\netty-transport-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-common\4.1.87.Final\netty-common-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-buffer\4.1.87.Final\netty-buffer-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver\4.1.87.Final\netty-resolver-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-haproxy\4.1.87.Final\netty-codec-haproxy-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec\4.1.87.Final\netty-codec-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-http2\4.1.87.Final\netty-codec-http2-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-handler\4.1.87.Final\netty-handler-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-http\4.1.87.Final\netty-codec-http-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns\4.1.87.Final\netty-resolver-dns-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-dns\4.1.87.Final\netty-codec-dns-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\vboxuser\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-epoll\4.1.87.Final\netty-transport-native-epoll-4.1.87.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.87.Final\netty-transport-native-unix-common-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.87.Final\netty-transport-classes-epoll-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.87.Final\netty-resolver-dns-classes-macos-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.87.Final\netty-resolver-dns-native-macos-4.1.87.Final-osx-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-classes\2.0.56.Final\netty-tcnative-classes-2.0.56.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-linux-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-osx-aarch_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.56.Final\netty-tcnative-boringssl-static-2.0.56.Final-windows-x86_64.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-handler-proxy\4.1.87.Final\netty-handler-proxy-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\io\netty\netty-codec-socks\4.1.87.Final\netty-codec-socks-4.1.87.Final.jar;C:\Users\vboxuser\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.9.0\brotli4j-1.9.0.jar;C:\Users\vboxuser\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\vboxuser\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\vboxuser\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\vboxuser\.m2\repository\ch\qos\logback\logback-classic\1.2.9\logback-classic-1.2.9.jar;C:\Users\vboxuser\.m2\repository\ch\qos\logback\logback-core\1.2.9\logback-core-1.2.9.jar;C:\Users\vboxuser\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.32\jcl-over-slf4j-1.7.32.jar;C:\Users\vboxuser\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\vboxuser\.m2\repository\com\jayway\jsonpath\json-path\2.8.0\json-path-2.8.0.jar;C:\Users\vboxuser\.m2\repository\net\minidev\json-smart\2.4.10\json-smart-2.4.10.jar;C:\Users\vboxuser\.m2\repository\net\minidev\accessors-smart\2.4.9\accessors-smart-2.4.9.jar;C:\Users\vboxuser\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\vboxuser\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\vboxuser\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\vboxuser\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\vboxuser\.m2\repository\io\github\classgraph\classgraph\4.8.152\classgraph-4.8.152.jar;C:\Users\vboxuser\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\vboxuser\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\vboxuser\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.1\junit-jupiter-api-5.9.1.jar;C:\Users\vboxuser\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\vboxuser\.m2\repository\org\junit\platform\junit-platform-commons\1.9.1\junit-platform-commons-1.9.1.jar;C:\Users\vboxuser\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\vboxuser\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.1\junit-jupiter-engine-5.9.1.jar;C:\Users\vboxuser\.m2\repository\org\junit\platform\junit-platform-engine\1.9.1\junit-platform-engine-1.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\vboxuser"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-03-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Public\Documents\iKarate"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\vboxuser\AppData\Local\Temp\surefire14746937017982455696\surefirebooter10935915498607598344.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="20+36-2344"/>
+    <property name="user.name" value="vboxuser"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\vboxuser\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\vboxuser\AppData\Local\Temp\"/>
+    <property name="java.version" value="20"/>
+    <property name="user.dir" value="C:\Users\Public\Documents\iKarate"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-20\bin;C:\Users\apache-maven-3.9.1\bin;C:\Users\vboxuser\AppData\Local\Microsoft\WindowsApps;;C:\Users\vboxuser\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="20+36-2344"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="64.0"/>
+  </properties>
+  <testcase name="testParallel" classname="reqResApp.reqResTest" time="10.197">
+    <failure message="status code was: 400, expected: 200, response time in milliseconds: 1283, url: https://reqres.in/api/register, response: &#10;{&quot;error&quot;:&quot;Missing email or username&quot;}&#10;classpath:reqResApp/feature/createUser.feature:22 ==&gt; expected: &lt;0&gt; but was: &lt;1&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 400, expected: 200, response time in milliseconds: 1283, url: https://reqres.in/api/register, response: 
+{"error":"Missing email or username"}
+classpath:reqResApp/feature/createUser.feature:22 ==> expected: <0> but was: <1>
+	at reqResApp.reqResTest.testParallel(reqResTest.java:15)
+]]></failure>
+    <system-out><![CDATA[11:03:45.609 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:03:45.622 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1681520625615
+11:03:45.673 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+11:03:47.961 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:48.066 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:48.094 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:48.141 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:48.182 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:49.012 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.013 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.014 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.014 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.014 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 86
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+{"username":"eve.holt@reqres.in","email":"eve.holt@reqres.in","password":"cityslicka"}
+
+11:03:49.719 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 696
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1709
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2B5pnszAH0GfVLZvjudSMavMgI5j13Shv0EZQ1oFTQrtatiingqYwFrTat0zckyVTNiQ3E%2B5vigg37Y%2F0n21UKQ5qMh1bAquIjJ7ai%2FFpdtbyh3MFur1NGeis5A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b8271039e823779-MEL
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.726 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 711
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1676
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C2WOvwYMPVeKF6dMMdNuStkHusJ%2FGTupcuU4zw3VHkYpmBMlLAT%2B3bWfOkUUNeOveETrs83MsSw244qJqNdOSC2oiLxZeWw82H0V%2B2Y1REaRTpw7rzMBzjCdAg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b827103a9aefe89-MEL
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.729 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 698
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5236
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dupA8ReLoJ2qUu6ONSBrPGA7AVonsRUd4W3KfSNuQNiRkIGXjAG%2Fi1b9jaW7Sp%2BkJ7BMqSa7BaQCcSPTh2wlSgfLwN4rDbwmDP9MMa9reZTt5BpQZvYMOfY5Uw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b82710398a229a3-MEL
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.774 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:49.785 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=3
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.789 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:49.795 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.800 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:49.805 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.840 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 51
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"c5-hJoimgtl6KhaZadfgKS3TQ7g00U"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5476
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lAQUI%2BxSWjhpUnF28xyJHu%2BASY1899bY1J5%2BlUEHdaWkvv8yuCIHNvdi9qxzdg8nx%2Fg7EUba9oJhUGMCZb7mZcYaniMuaI7PfRFGRFL1HCsb4LDQwEgOUoblSQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b8271047d955a4f-MEL
+{"page":3,"per_page":6,"total":12,"total_pages":2,"data":[],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.850 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:03:49.859 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=3
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/20)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:03:49.863 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 57
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"3e4-2RLXvr5wTg9YQ6aH95CkYoFNuO8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5236
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=thUo0xWj3w0wCV7Vx3BmqVynjb3xomA6U0x6otaSp%2FMCRgEdC7yshozMgqIbEuFwtDUnLGCEP09MtuWUFdN%2FlGW4Gax6El2aeCNFVxVNzYyMGwkZ%2FvfPuNcG8A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b827104adc62b30-MEL
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.893 [pool-1-thread-4] INFO  com.intuit.karate - [print] 1 
+11:03:49.927 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 68
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"c5-hJoimgtl6KhaZadfgKS3TQ7g00U"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 5476
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sLD1JwamJ%2BzOrJiJ1SvGWgrE8GrWNCga8GnKhTKZ73KKbDeCiSVV%2FrX2HTKbgwChlJfBrRreC8mNpN2iT9kUlJnNnfk0G8QBdA1Op%2FrOAnMU6l0lJezu6ks2KA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b8271050f7e2b32-MEL
+{"page":3,"per_page":6,"total":12,"total_pages":2,"data":[],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:49.935 [pool-1-thread-3] INFO  com.intuit.karate - [print] 3 
+11:03:50.298 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1283
+1 < 400
+1 < Date: Sat, 15 Apr 2023 07:23:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 37
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xwcOAJSFmH9LEaE4U%2BMHJBtcDvqh2NuRjE0gL5Ykek5ugtVhxOLPPsa5wUApUAor7B%2BgZPQvb9ia48%2FYWired1YgxbaDnU6X4VG5a4orQmW1usIsNl3AbXBNxA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7b8271039c0d29a2-MEL
+{"error":"Missing email or username"}
+
+11:03:50.305 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1289
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1ncpWqwTdUbP2WaDgPEc7Mi5HW75IEmZ8iVJIhsVyNq4w9rPNKoYzwFdToWbpotd%2BhUb%2FP%2BgmnFSAfonlI5mmHDUabxaIDypSrf3rzSq0sHgMPWLNMtyrMfjJg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7b8271039abd17cd-MEL
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+11:03:50.345 [pool-1-thread-2] ERROR com.intuit.karate - classpath:reqResApp/feature/createUser.feature:22
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 1283, url: https://reqres.in/api/register, response: 
+{"error":"Missing email or username"}
+classpath:reqResApp/feature/createUser.feature:22
+11:03:50.431 [pool-1-thread-1] INFO  com.intuit.karate - [print] My token is: QpwL5tke4Pnpja7X4 
+11:03:50.844 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1045
+1 < 200
+1 < Date: Sat, 15 Apr 2023 07:23:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1710
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qx31iKLS83E0uZBO2FzJ9ds6aKfNFV0MH9ANH1IyFMujIFI%2F4I32vDNVSQfVEQnBq0jWglrgEMOEHcioeaSfd4XY3cSCrfJcMOyMlzX5LWGf%2FfKTDFn%2FerYRXw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7b82710acf17299f-MEL
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+11:03:50.848 [pool-1-thread-5] INFO  com.intuit.karate - [print] 2 
+---------------------------------------------------------
+feature: classpath:reqResApp/feature/createUser.feature
+scenarios:  2 | passed:  1 | failed:  1 | time: 4.4817
+---------------------------------------------------------
+
+11:03:52.162 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (1 remaining) classpath:reqResApp/feature/createUser.feature
+---------------------------------------------------------
+feature: classpath:reqResApp/feature/getUsers.feature
+scenarios:  7 | passed:  7 | failed:  0 | time: 6.1679
+---------------------------------------------------------
+
+11:03:52.734 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:reqResApp/feature/getUsers.feature
+Karate version: 1.4.0
+======================================================
+elapsed:   8.40 | threads:    5 | thread time: 10.65 
+features:     2 | skipped:    0 | efficiency: 0.25
+scenarios:    9 | passed:     8 | failed: 1
+======================================================
+>>> failed features:
+status code was: 400, expected: 200, response time in milliseconds: 1283, url: https://reqres.in/api/register, response: 
+{"error":"Missing email or username"}
+classpath:reqResApp/feature/createUser.feature:22
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.4.0
+file:///C:/Users/Public/Documents/iKarate/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
