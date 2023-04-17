@@ -8,7 +8,7 @@ Maven Commands:
 
   > mvn test "-Dkarate.options=classpath:reqResApp/feature/03_createUserDemo.feature"
   
-* To execute all the test cases with a specific (@Regression) tags from all the features inside the feature folder:
+* To execute all the test cases with a specific (@Regression) tag from all the features inside the feature folder:
 
   > mvn test "-Dkarate.options=--tags @Regression classpath:reqResApp/feature/"  
 
