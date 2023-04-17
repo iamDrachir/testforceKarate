@@ -14,4 +14,4 @@ Maven Commands:
 
 * To execute a specific scenario defined in line #21 from 03_createUserDemo.feature:
 
-  > mvn test "-Dkarate.options=classpath:reqResApp/feature/03_createUserDemo.feature:21
+  > mvn test "-Dkarate.options=classpath:reqResApp/feature/03_createUserDemo.feature:21"
