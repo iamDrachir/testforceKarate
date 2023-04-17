@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: reqResApp.reqResTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.854 s - in reqResApp.reqResTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.551 s - in reqResApp.reqResTest

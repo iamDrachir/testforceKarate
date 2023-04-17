@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-pass" class="bg-success">1</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,14 +49,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-04-17 04:06:08 PM</div>
+    <div>2023-04-17 04:33:43 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>Validate user creation with request</span></a>
-          </div>
           <div class="nav-item passed">
             <a href="#[2:21]"><span>[2:21]</span> <span>Validate user creation without request</span></a>
           </div>
@@ -72,396 +69,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:8]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">Progression</a><a class="badge badge-primary" href="karate-tags.html">Positive</a><a class="badge badge-primary" href="karate-tags.html">Regression</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1:8]</span>
-                <span class="scenario-name">Validate user creation with request</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2713</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1:8]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1:8]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def baseURL = &#39;https://reqres.in/api&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">16:06:02.431 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:8]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def createUserData = read(&#39;classpath:reqResApp/testData/createUserPayload.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">269</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseURL +&#39;/register&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">23</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request createUserData.users[1]</span>
-      </div>
-    </div>
-    <div class="time-cell passed">42</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2329</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.12">16:06:03.729 request:
-1 &gt; POST https://reqres.in/api/register
-1 &gt; Accept: application/json
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 94
-1 &gt; Host: reqres.in
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;tracey.ramos@reqres.in&quot;,&quot;email&quot;:&quot;tracey.ramos@reqres.in&quot;,&quot;password&quot;:&quot;cityslicka&quot;}
-
-16:06:05.121 response time in milliseconds: 1382
-1 &lt; 200
-1 &lt; Date: Mon, 17 Apr 2023 06:06:05 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 36
-1 &lt; Connection: keep-alive
-1 &lt; X-Powered-By: Express
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Etag: W/&quot;24-qkmwtZYcaqJ/9W5ty0Q1n1B5zOE&quot;
-1 &lt; Via: 1.1 vegur
-1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=0489WAZm0rtG3fvBtDbq%2F2lkm%2BzHsxpU3T3HWn5LrCWuMsWbC5EK6Rey81Rq3IAe1GssOejFL3oAscussiy1cb1lfyDxGPue5ivZpYKKzifv2it0fdjaEHOvVg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
-1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7b927ae1eec629aa-MEL
-{&quot;id&quot;:6,&quot;token&quot;:&quot;QpwL5tke4Pnpja7X6&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">5</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>match response.id == &#39;#notnull&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">34</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>match response.token == &#39;#notnull&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>match response == {&quot;id&quot;: &quot;#number&quot;, &quot;token&quot;: &quot;#string&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def myToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print &#39;The dummy token is: &#39; + myToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.18">16:06:05.160 [print] The dummy token is: QpwL5tke4Pnpja7X6 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
           <div class="scenario-heading" id="[2:21]">
             <div class="heading-container">
               <div class="scenario-tags">
@@ -474,7 +81,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2710</span>
+              <span>ms:</span>&nbsp;<span>3476</span>
             </div>
           </div>
           <div class="step-row">
@@ -497,7 +104,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def baseURL = &#39;https://reqres.in/api&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -506,7 +113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">16:06:02.363 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:33:40.038 karate.env system property was: null 
 </div>   
 
   
@@ -526,7 +133,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def createUserData = read(&#39;classpath:reqResApp/testData/createUserPayload.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">297</div>
+    <div class="time-cell passed">78</div>
   </div>
 
    
@@ -554,7 +161,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/register&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -582,7 +189,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -610,7 +217,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2368</div>
+    <div class="time-cell passed">3285</div>
   </div>
 
    
@@ -619,7 +226,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.24">16:06:03.728 request:
+  <div class="preformatted" data-parent="0.24">16:33:40.867 request:
 1 &gt; POST https://reqres.in/api/register
 1 &gt; Accept: application/json
 1 &gt; Host: reqres.in
@@ -628,9 +235,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:06:05.121 response time in milliseconds: 1383
+16:33:43.539 response time in milliseconds: 2672
 1 &lt; 400
-1 &lt; Date: Mon, 17 Apr 2023 06:06:05 GMT
+1 &lt; Date: Mon, 17 Apr 2023 06:33:44 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 37
 1 &lt; Connection: keep-alive
@@ -639,10 +246,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Etag: W/&quot;25-Ik70kof1lbc973ShN5FoVPxYn7A&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=bXOWr%2F2bfGZPzYWcp6JaOL24vp6spkREfj140e%2BHeG32JYqvnbzvFvsVVifmw6XNl9PqayD1T3VQdJ5lI%2BxP8qjRJWRE0KUggevwHcJ5S7Ca8cecacfp%2FO8bqg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=be56K%2FI%2FhKocXh3DOWuFn%2FPtq30t6kRF33xpQM9HdoFqFe4pwkvHUyVTFnKozz1zLxrMes%2FtM8B1B%2BDa0Nt8hXt3TZlwHv2LQrZ%2B%2FsA%2B0hguWsOmjWYTWlfRNQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7b927ae1e97a29bf-MEL
+1 &lt; CF-RAY: 7b92a35f5cfc29a1-MEL
 {&quot;error&quot;:&quot;Missing email or username&quot;}
 
 </div>   
@@ -664,7 +271,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -692,7 +299,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>match response.error == &#39;Missing email or username&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell passed">100</div>
   </div>
 
    

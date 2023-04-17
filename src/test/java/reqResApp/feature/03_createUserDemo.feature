@@ -19,7 +19,7 @@ Scenario: Validate user creation with request
 
 @Negative @Progression @Regression
 Scenario: Validate user creation without request
-    Given url 'https://reqres.in/api/register'
+    Given url baseURL +'/register'
     And header Accept = 'application/json'
     When method post
     Then status 400
